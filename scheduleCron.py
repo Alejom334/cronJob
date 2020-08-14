@@ -93,8 +93,8 @@ from crontab import CronTab
 #create the object of the crontab
 my_cron = CronTab(user = 'alejandromartinez')
 
-my_cron.new(command = '/usr/local/opt/python@3.8/libexec/bin/python /Users/alejandromartinez/hello.py >> test.txt')
-my_cron.new(command = 'sleep 30; /usr/local/opt/python@3.8/libexec/bin/python /Users/alejandromartinez/hello2.py >> test.txt')
+my_cron.new(command = '/usr/local/opt/python@3.8/libexec/bin/python /Users/alejandromartinez/cron/cronJob/hello.py >> test.txt')
+my_cron.new(command = 'sleep 30; /usr/local/opt/python@3.8/libexec/bin/python /Users/alejandromartinez/cron/cronJob/hello2.py >> test.txt')
 
 #job.minute.every(1)
 print('Running Task')
